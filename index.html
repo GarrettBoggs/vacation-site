@@ -2,20 +2,91 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/my-styles.css" rel="stylesheet" media="screen">
     <title>Vacation</title>
   </head>
   <body>
-    <div class="">
-      <h1>Vacation Site</h1>
-      <div class="">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-
+    <!-- Navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <button type="button" class"navbar-toggle" name="button">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand text-muted" href="#">Vacations</a>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact info</a></li>
+          </ul>
       </div>
     </div>
+</div>
+<!-- Carousel-->
+<div id="myCarousel" class="carousel slide jumbotron">
+  <div class="container">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="text-center">
+          <img src="img/vac1.jpeg">
+        </div>
+      </div>
+    <div class="item">
+      <div class="text-center">
+        <img src="img/vac2.jpeg">
+      </div>
+    </div>
+      <div class="item ">
+        <div class="text-center">
+          <img src="img/vac3.jpeg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
+
+</div>
+
+    <!-- Main content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h1>Vacation Site</h1>
+          <ul>
+            <li>Portland</li>
+            <li>Las Vegas</li>
+            <li>New York</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h1>Places</h1>
+          <p>
+            here is all the places you can visit.Nullam commodo, orci et imperdiet tincidunt, nisl nunc fermentum augue, quis vehicula ex nibh vel massa. Nunc semper libero eu consectetur lacinia. Morbi lacus ante, faucibus vitae molestie a, interdum ut orci.
+          </p>
+          </div>
+          <div class="col-sm-4">
+          <h1>Activities</h1>
+          <p>Nullam commodo, orci et imperdiet tincidunt, nisl nunc fermentum augue, quis vehicula ex nibh vel massa. Nunc semper libero eu consectetur lacinia. Morbi lacus ante, faucibus vitae molestie a, interdum ut orci. </p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
